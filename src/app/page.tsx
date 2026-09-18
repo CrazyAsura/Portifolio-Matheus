@@ -2,26 +2,24 @@
 
 import React from "react";
 import { Box } from "@mui/material";
-
-// Sections
 import Hero from "@/app/ui/sections/hero";
-import About from "@/app/ui/sections/about";
-import Highlights from "@/app/ui/sections/highlights";
-import Interests from "@/app/ui/sections/interests";
+import BentoPillars from "@/app/ui/sections/bento-pillars";
+import VerticalScrollCarousel from "@/app/ui/sections/vertical-scroll-carousel";
 import Timeline from "@/app/ui/sections/timeline";
 import Courses from "@/app/ui/sections/courses";
 import Social from "@/app/ui/sections/social";
+import ScrollNavigationButton from "@/app/ui/components/ScrollNavigationButton";
 
 export default function Page() {
   return (
-    <Box className="min-h-screen bg-white text-gray-900 overflow-x-hidden font-sans">
+    <Box component="main" sx={{ width: "100%", overflow: "clip", position: "relative" }}>
       <Hero />
-      <About />
-      <Highlights />
-      <Interests />
+      <BentoPillars />
+      <VerticalScrollCarousel />
       <Timeline />
       <Courses />
       <Social />
+      <ScrollNavigationButton />
     </Box>
   );
 }

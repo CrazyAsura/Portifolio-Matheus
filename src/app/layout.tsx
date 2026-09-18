@@ -1,17 +1,19 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Newsreader, Inter, Geist_Mono } from "next/font/google";
+import { Box } from "@mui/material";
 import "./globals.css";
 import Header from "./ui/layout/header";
 import Footer from "./ui/layout/footer";
+import StoreProvider from "./store/provider";
+import { PerformanceProvider } from "./lib/performance";
+import SmoothScroll from "./ui/components/SmoothScroll";
+import Preloader from "./ui/components/Preloader";
+import ScrollProgressBar from "./ui/components/ScrollProgressBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const newsreader = Newsreader({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-newsreader",
+  style: ["normal", "italic"],
 });
 
 const inter = Inter({
@@ -19,12 +21,36 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#059669",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
-  title: "Portifólio | Matheus Mendonça",
-  description: "Portfólio de Matheus Mendonça Trindade, estudante de Psicologia focado em humanização e propósito.",
+  title: "Matheus Mendonça Trindade — Psicologia & Humanização",
+  description:
+    "Portfólio acadêmico e profissional de Matheus Mendonça Trindade. Estudante de Psicologia (9º período - UniNassau), atuação clínica supervisionada, Acompanhamento Terapêutico (TEA) e formação técnica em Administração.",
   icons: {
-    icon: "/favicon.ico",
-  }
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
+  openGraph: {
+    title: "Matheus Mendonça Trindade — Psicologia & Humanização",
+    description:
+      "Estudante de Psicologia na UniNassau, atuação clínica supervisionada e Acompanhamento Terapêutico.",
+    type: "website",
+    locale: "pt_BR",
+  },
 };
 
 export default function RootLayout({
@@ -35,12 +61,21 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
+        className={`${newsreader.variable} ${inter.variable} ${geistMono.variable} font-sans bg-[#fafaf9] text-slate-900 antialiased selection:bg-emerald-100 selection:text-emerald-900 min-h-screen flex flex-col`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <StoreProvider>
+          <PerformanceProvider>
+            <Preloader />
+            <ScrollProgressBar />
+            <SmoothScroll>
+              <Header />
+              <Box sx={{ flex: 1 }}>{children}</Box>
+              <Footer />
+            </SmoothScroll>
+          </PerformanceProvider>
+        </StoreProvider>
       </body>
     </html>
   );
 }
+

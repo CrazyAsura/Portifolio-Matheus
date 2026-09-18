@@ -1,124 +1,182 @@
 "use client";
+
 import React from "react";
-import Link from "next/link";
-import { 
-  Box, 
-  Container, 
-  Typography, 
-  IconButton, 
-  Divider, 
-  Stack 
+import {
+  Box,
+  Container,
+  Typography,
+  IconButton,
+  Stack,
+  Divider,
 } from "@mui/material";
-import { Brain, Linkedin, Instagram, AlertCircle } from "lucide-react";
+import { Brain, ArrowUp } from "lucide-react";
+import {
+  WhatsAppIcon,
+  LinkedInIcon,
+  InstagramIcon,
+  MailIcon,
+} from "@/app/ui/components/BrandIcons";
+import { PERSONAL_INFO } from "@/app/lib/data";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <Box 
-      component="footer" 
-      sx={{ 
-        bgcolor: "white", 
-        borderTop: "1px solid", 
-        borderColor: "rgba(0,0,0,0.06)",
-        pt: 8, 
-        pb: 4 
+    <Box
+      component="footer"
+      sx={{
+        bgcolor: "#ffffff",
+        borderTop: "1px solid rgba(228, 228, 231, 0.8)",
+        pt: { xs: 8, md: 10 },
+        pb: 6,
+        px: { xs: 2, sm: 3, lg: 4 },
       }}
     >
       <Container maxWidth="lg">
-        <Stack 
-          direction={{ xs: "column", md: "row" }} 
-          justifyContent="space-between" 
-          alignItems="center" 
-          spacing={4}
+        {/* Top Tier */}
+        <Stack
+          direction={{ xs: "column", md: "row" }}
+          justifyContent="space-between"
+          alignItems="center"
+          spacing={3}
           sx={{ mb: 6 }}
         >
-          {/* Logo / Nome (Espelhando o Header) */}
-          <Box 
-            sx={{ 
-              display: "flex", 
-              alignItems: "center", 
-              gap: 1.5,
-              color: "text.primary" 
-            }}
-          >
-            <Box 
-              sx={{ 
-                bgcolor: "#059669", 
-                color: "white", 
-                p: 0.8, 
-                borderRadius: "12px", 
-                display: "flex" 
+          {/* Brand */}
+          <Stack direction="row" spacing={1.5} alignItems="center">
+            <Box
+              sx={{
+                width: 40,
+                height: 40,
+                borderRadius: "16px",
+                bgcolor: "#059669",
+                color: "#ffffff",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "inset 0 1px 0 0 rgba(255,255,255,0.3)",
               }}
             >
-              <Brain size={24} />
+              <Brain size={20} />
             </Box>
-            <Typography 
-              variant="h6" 
-              sx={{ 
-                fontWeight: 800, 
-                letterSpacing: -0.5,
-                fontSize: { xs: '1rem', sm: '1.25rem' }
-              }}
-            >
-              Matheus Mendonça Trindade
-            </Typography>
-          </Box>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  fontFamily: "var(--font-newsreader), Georgia, serif",
+                  fontWeight: 700,
+                  color: "#0f172a",
+                  lineHeight: 1.2,
+                }}
+              >
+                {PERSONAL_INFO.name}
+              </Typography>
+              <Typography
+                variant="caption"
+                sx={{
+                  color: "#047857",
+                  fontWeight: 600,
+                  fontSize: "0.75rem",
+                }}
+              >
+                Estudante de Psicologia • UniNassau Aracaju
+              </Typography>
+            </Box>
+          </Stack>
 
-          {/* Redes Sociais */}
-          <Stack direction="row" spacing={2}>
-            <IconButton 
+          {/* Social Icons & Scroll to Top */}
+          <Stack direction="row" spacing={1} alignItems="center">
+            <IconButton
               component="a"
-              href="https://www.linkedin.com/in/matheusadmpsic/"
+              href={PERSONAL_INFO.whatsappUrl}
               target="_blank"
-              sx={{ 
-                color: "text.secondary", 
-                transition: "0.3s",
-                "&:hover": { color: "#0077b5", bgcolor: "rgba(0, 119, 181, 0.05)" } 
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              sx={{
+                color: "#64748b",
+                "&:hover": { color: "#059669", bgcolor: "rgba(5, 150, 105, 0.08)" },
               }}
             >
-              <Linkedin size={24} />
+              <WhatsAppIcon size={19} color="currentColor" />
             </IconButton>
-            <IconButton 
+            <IconButton
               component="a"
-              href="https://www.instagram.com/matheusmt_bjj?igsh=MXBoaXMyYmI1NjYxNA=="
+              href={PERSONAL_INFO.linkedinUrl}
               target="_blank"
-              sx={{ 
-                color: "text.secondary", 
-                transition: "0.3s",
-                "&:hover": { color: "#e1306c", bgcolor: "rgba(225, 48, 108, 0.05)" } 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              sx={{
+                color: "#64748b",
+                "&:hover": { color: "#0a66c2", bgcolor: "rgba(10, 102, 194, 0.08)" },
               }}
             >
-              <Instagram size={24} />
+              <LinkedInIcon size={19} color="currentColor" />
+            </IconButton>
+            <IconButton
+              component="a"
+              href={PERSONAL_INFO.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              sx={{
+                color: "#64748b",
+                "&:hover": { color: "#e1306c", bgcolor: "rgba(225, 48, 108, 0.08)" },
+              }}
+            >
+              <InstagramIcon size={19} color="currentColor" />
+            </IconButton>
+            <IconButton
+              component="a"
+              href={`mailto:${PERSONAL_INFO.email}`}
+              aria-label="E-mail"
+              sx={{
+                color: "#64748b",
+                "&:hover": { color: "#d97706", bgcolor: "rgba(217, 119, 6, 0.08)" },
+              }}
+            >
+              <MailIcon size={19} color="currentColor" />
+            </IconButton>
+            <IconButton
+              onClick={scrollToTop}
+              aria-label="Voltar ao topo"
+              sx={{
+                color: "#64748b",
+                border: "1px solid #e2e8f0",
+                ml: 1,
+                "&:hover": { color: "#047857", bgcolor: "rgba(5, 150, 105, 0.08)" },
+              }}
+            >
+              <ArrowUp size={18} />
             </IconButton>
           </Stack>
         </Stack>
 
-        <Divider sx={{ mb: 6, opacity: 0.6 }} />
+        <Divider sx={{ mb: 4, borderColor: "#f1f5f9" }} />
 
-        {/* Aviso Ético e Direitos */}
-        <Box sx={{ maxWidth: "800px", mx: "auto", textAlign: "center" }}>
-          <Box 
-            sx={{ 
-              bgcolor: "#fffbeb", 
-              border: "1px solid #fde68a", 
-              borderRadius: "20px", 
-              p: { xs: 2, sm: 3 }, 
-              mb: 4,
-              display: "flex",
-              flexDirection: { xs: "column", sm: "row" },
-              alignItems: { xs: "flex-start", sm: "center" },
-              gap: 2
+        {/* Bottom Tier */}
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          justifyContent="space-between"
+          alignItems="center"
+          spacing={2}
+        >
+          <Typography variant="caption" sx={{ color: "#64748b", fontWeight: 500 }}>
+            © {new Date().getFullYear()} {PERSONAL_INFO.name}. Todos os direitos reservados.
+          </Typography>
+          <Typography
+            variant="caption"
+            sx={{
+              color: "#94a3b8",
+              textAlign: { xs: "center", sm: "right" },
+              maxWidth: 480,
+              fontSize: "0.725rem",
+              lineHeight: 1.5,
             }}
           >
-            <AlertCircle size={24} className="text-amber-600 shrink-0" />
-            <Typography variant="caption" sx={{ color: "#92400e", fontWeight: 500, lineHeight: 1.6, textAlign: "left", fontSize: { xs: "0.75rem", sm: "0.8rem" } }}>
-              <strong>Aviso Ético:</strong> Este é um portfólio acadêmico. Matheus Mendonça é estudante de graduação em Psicologia (UniNassau) e suas atividades práticas ocorrem estritamente sob supervisão docente, conforme as diretrizes do CRP. Não realiza atendimentos clínicos autônomos.
-            </Typography>
-          </Box>
-
-          <Typography variant="body2" color="text.secondary" sx={{ opacity: 0.7 }}>
-            © {new Date().getFullYear()} Matheus Mendonça • Todos os direitos reservados.
+            Portfólio de apresentação acadêmica e curricular. Práticas supervisionadas sob diretrizes do CFP / CRP-19.
           </Typography>
-        </Box>
+        </Stack>
       </Container>
     </Box>
   );
