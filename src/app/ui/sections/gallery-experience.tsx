@@ -62,7 +62,7 @@ export default function GalleryExperience() {
             }}
           >
             <Camera size={14} />
-            Vivências Formativas
+            Vivências Acadêmicas
           </Typography>
           <Typography
             variant="h2"
@@ -75,7 +75,7 @@ export default function GalleryExperience() {
               letterSpacing: "-0.02em",
             }}
           >
-            Vivências que dão forma ao ofício.
+            Vivências que contribuem para minha formação.
           </Typography>
           <Typography
             variant="body1"
@@ -85,7 +85,7 @@ export default function GalleryExperience() {
               lineHeight: 1.6,
             }}
           >
-            Vivências acadêmicas e experiências formativas que contribuíram para minha trajetória em Psicologia.
+            Vivências acadêmicas, práticas supervisionadas, pesquisa científica e atividades de divulgação do conhecimento.
           </Typography>
         </Box>
 

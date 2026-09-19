@@ -50,7 +50,7 @@ const CAROUSEL_CARDS: CarouselCardData[] = [
     step: "01",
     category: "Estágio Supervisionado",
     icon: <HeartHandshake size={20} color="#059669" />,
-    title: "Estágio Clínico Supervisionado — Clínica-Escola",
+    title: "Estágio Clínico Supervisionado & Escuta Fenomenológica",
     subtitle: "Clínica-Escola de Psicologia — UniNassau",
     description:
       "Experiência acadêmica em atendimentos psicoterapêuticos individuais realizados no contexto da Clínica-Escola de Psicologia da UNINASSAU, sob supervisão docente contínua fundamentada na Fenomenologia Existencial.",
@@ -68,10 +68,10 @@ const CAROUSEL_CARDS: CarouselCardData[] = [
     step: "02",
     category: "Inclusão Escolar & Autonomia",
     icon: <Sparkles size={20} color="#059669" />,
-    title: "Experiência em Inclusão Escolar",
+    title: "Acompanhamento Terapêutico (AT) — Experiência em Contexto Escolar",
     subtitle: "Mediação Pedagógica & Promoção de Autonomia no Contexto do TEA",
     description:
-      "Experiência supervisionada em contexto educacional, envolvendo estratégias de acolhimento, mediação pedagógica, promoção da autonomia e fortalecimento das interações com a comunidade escolar.",
+      "Experiência supervisionada em contexto educacional, envolvendo estratégias de acolhimento, mediação pedagógica, promoção da autonomia e colaboração integrada com a equipe pedagógica.",
     img: "/estagio2.jpeg",
     badge: "Contexto Educacional",
     takeaways: [
@@ -488,7 +488,7 @@ export default function VerticalScrollCarousel() {
               <Box>
                 <Chip
                   icon={<Camera size={14} color="#059669" />}
-                  label="Vivências Formativas"
+                  label="Vivências Acadêmicas"
                   sx={{
                     bgcolor: "#ecfdf5",
                     color: "#065f46",
@@ -513,7 +513,7 @@ export default function VerticalScrollCarousel() {
                     mb: 1.25,
                   }}
                 >
-                  Vivências que dão forma ao ofício.
+                  Vivências que contribuem para minha formação.
                 </Typography>
                 <Typography
                   variant="body1"
@@ -524,7 +524,7 @@ export default function VerticalScrollCarousel() {
                     maxWidth: 480,
                   }}
                 >
-                  Vivências acadêmicas e experiências formativas que contribuíram para minha trajetória em Psicologia.
+                  Vivências acadêmicas, práticas supervisionadas, pesquisa científica e atividades de divulgação do conhecimento.
                 </Typography>
               </Box>
 

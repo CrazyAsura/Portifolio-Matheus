@@ -78,7 +78,7 @@ export default function Courses() {
               lineHeight: 1.6,
             }}
           >
-            Instituições de ensino que fundamentam a formação acadêmica com rigor teórico, científico e visão multidisciplinar.
+            Instituições de ensino que fundamentam minha formação acadêmica com rigor teórico, científico e visão multidisciplinar.
           </Typography>
         </Box>
 

@@ -63,7 +63,7 @@ export default function BentoPillars() {
               textTransform: "uppercase",
             }}
           >
-            Áreas de Formação & Vivências Acadêmicas
+            Áreas de Formação & Experiência Acadêmica
           </Typography>
           <Typography
             variant="h2"

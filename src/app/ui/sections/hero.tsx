@@ -165,22 +165,36 @@ export default function Hero() {
           >
             {/* Top Pitch */}
             <Box component={motion.div} variants={fadeUpVariants}>
-              <Chip
-                icon={<Sparkles size={14} color="#34d399" />}
-                label="Estudante de Psicologia • 9º Período • UniNassau"
-                sx={{
-                  bgcolor: "rgba(5, 150, 105, 0.15)",
-                  color: "#a7f3d0",
-                  border: "1px solid rgba(52, 211, 153, 0.3)",
-                  fontWeight: 600,
-                  fontSize: "0.75rem",
-                  py: 0.5,
-                  px: 0.75,
-                  mb: 2.5,
-                  borderRadius: "9999px",
-                  backdropFilter: "blur(12px)",
-                }}
-              />
+              <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 2.5, flexWrap: "wrap", gap: 1 }}>
+                <Chip
+                  label="PORTFÓLIO ACADÊMICO"
+                  size="small"
+                  sx={{
+                    bgcolor: "rgba(255, 255, 255, 0.08)",
+                    color: "#f8fafc",
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
+                    fontWeight: 800,
+                    fontSize: "0.685rem",
+                    letterSpacing: "0.08em",
+                    borderRadius: "9999px",
+                  }}
+                />
+                <Chip
+                  icon={<Sparkles size={13} color="#34d399" />}
+                  label="Estudante de Psicologia • 9º Período • UniNassau"
+                  sx={{
+                    bgcolor: "rgba(5, 150, 105, 0.15)",
+                    color: "#a7f3d0",
+                    border: "1px solid rgba(52, 211, 153, 0.3)",
+                    fontWeight: 600,
+                    fontSize: "0.75rem",
+                    py: 0.5,
+                    px: 0.75,
+                    borderRadius: "9999px",
+                    backdropFilter: "blur(12px)",
+                  }}
+                />
+              </Stack>
               <Typography
                 variant="body1"
                 sx={{
@@ -191,7 +205,7 @@ export default function Hero() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                Portfólio acadêmico dedicado à apresentação de formação, experiências de estágio supervisionado e projetos em Psicologia. Atividades clínicas desenvolvidas estritamente no âmbito da clínica-escola sob supervisão docente.
+                Minha trajetória acadêmica é construída através da escuta, do estudo científico e de experiências práticas supervisionadas, buscando compreender as vivências humanas e promover autonomia.
               </Typography>
             </Box>
 
@@ -580,8 +594,11 @@ export default function Hero() {
                   <Typography variant="caption" sx={{ fontWeight: 700, color: "#f8fafc", fontSize: "0.8rem", display: "block" }}>
                     Matheus Mendonça Trindade
                   </Typography>
-                  <Typography variant="caption" sx={{ color: "#34d399", fontSize: "0.685rem", fontWeight: 600 }}>
+                  <Typography variant="caption" sx={{ color: "#34d399", fontSize: "0.685rem", fontWeight: 600, display: "block" }}>
                     Estudante de Psicologia • 9º Período
+                  </Typography>
+                  <Typography variant="caption" sx={{ color: "#94a3b8", fontSize: "0.625rem", fontWeight: 500 }}>
+                    Clínica • Fenomenologia • Inclusão
                   </Typography>
                 </Box>
                 <Chip
@@ -639,7 +656,7 @@ export default function Hero() {
               }}
             >
               <Box component="span" sx={{ display: "block" }}>
-                PSICOLOGIA
+                FORMAÇÃO EM
               </Box>
               <Box
                 component="span"
@@ -649,10 +666,10 @@ export default function Hero() {
                   WebkitTextStroke: { xs: "none", lg: "1px rgba(255,255,255,0.2)" },
                 }}
               >
-                HUMANIZADA
+                PSICOLOGIA
               </Box>
               <Box component="span" sx={{ display: "block" }}>
-                que conecta
+                com ciência e
               </Box>
               <Box
                 component="span"
@@ -661,7 +678,7 @@ export default function Hero() {
                   color: "#34d399",
                 }}
               >
-                e transforma.
+                sensibilidade.
               </Box>
             </Typography>
 
@@ -685,7 +702,7 @@ export default function Hero() {
                 component="span"
                 sx={{ width: 24, height: 1.5, bgcolor: "#34d399", display: "inline-block" }}
               />
-              Estágio Supervisionado • Fenomenologia & Inclusão
+              Estágio Clínico Supervisionado • Fenomenologia & Inclusão Escolar
             </Typography>
           </Box>
         </Box>

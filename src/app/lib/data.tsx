@@ -64,11 +64,11 @@ export const PERSONAL_INFO = {
 export const PILLARS: PhilosophyPillar[] = [
   {
     id: "clinica",
-    title: "Estágio Clínico Supervisionado",
-    subtitle: "Prática acadêmica na clínica-escola sob abordagem fenomenológica",
+    title: "Formação Clínica & Escuta Fenomenológica",
+    subtitle: "Estágio clínico supervisionado no contexto da clínica-escola",
     description:
       "Prática clínica desenvolvida no contexto da clínica-escola sob rigorosa supervisão docente. A abordagem fenomenológico-existencial orienta uma postura de escuta acolhedora, priorizando a singularidade e o sentido atribuído pela pessoa atendida à sua existência.",
-    category: "Estágio Supervisionado",
+    category: "Estágio Clínico Supervisionado",
     points: [
       "Escuta acolhedora orientada pelos princípios éticos da Psicologia",
       "Supervisão clínica acadêmica contínua",
@@ -77,10 +77,10 @@ export const PILLARS: PhilosophyPillar[] = [
   },
   {
     id: "at-inclusao",
-    title: "Inclusão & Mediação Escolar",
-    subtitle: "Vivências em contexto educacional e neurodiversidade",
+    title: "Acompanhamento Terapêutico (AT) — Experiência em Contexto Escolar",
+    subtitle: "Inclusão educacional, promoção de autonomia e mediação",
     description:
-      "Experiência supervisionada em ambiente escolar envolvendo estratégias de acolhimento, mediação pedagógica, promoção da autonomia e fortalecimento das interações entre pares no contexto da inclusão.",
+      "Experiência em contexto educacional relacionada à inclusão de estudantes com TEA, envolvendo promoção da autonomia, mediação pedagógica de rotinas e colaboração integrada com a equipe pedagógica e família.",
     category: "Inclusão Escolar",
     points: [
       "Mediação ativa no contexto educacional",
@@ -104,14 +104,14 @@ export const PILLARS: PhilosophyPillar[] = [
   {
     id: "mente-corpo",
     title: "Saúde Integral & Estilo de Vida",
-    subtitle: "Sinergia entre saúde mental, prática esportiva e disciplina",
+    subtitle: "Qualidade de vida, prática de atividades físicas e disciplina pessoal",
     description:
-      "A prática contínua de artes marciais (Jiu-Jitsu), corrida e musculação complementa a compreensão da saúde integral: o corpo e a mente como unidade viva no enfrentamento do estresse e no cultivo do bem-estar.",
+      "A prática pessoal de atividades físicas integra meus interesses relacionados à qualidade de vida, disciplina e bem-estar, complementando a compreensão da saúde integral e do cuidado biopsicossocial.",
     category: "Equilíbrio e Saúde",
     points: [
       "Psicoeducação ética e científica nas redes sociais",
-      "Disciplina e resiliência transferidas do esporte à formação",
-      "Promoção de hábitos de vida sustentáveis",
+      "Disciplina e hábitos saudáveis no desenvolvimento pessoal",
+      "Promoção de estilos de vida equilibrados e sustentáveis",
     ],
   },
 ];
@@ -121,9 +121,9 @@ export const TRAJECTORY_EVENTS: TrajectoryItem[] = [
     id: "at-tea",
     title: "Experiência em Inclusão Escolar",
     period: "Em andamento • 2025 - Presente",
-    subtitle: "Contexto Educacional • Mediação e Autonomia",
+    subtitle: "Contexto Educacional • Promoção de Autonomia e Mediação",
     description:
-      "Experiência supervisionada em contexto educacional regular, atuando na facilitação da inclusão, mediação de processos de aprendizagem e participação em estratégias de acolhimento e promoção da autonomia.",
+      "Experiência em contexto educacional envolvendo estratégias de inclusão, promoção da autonomia, mediação de processos de aprendizagem e colaboração integrada com a equipe pedagógica.",
     active: true,
     institution: "Contexto Educacional / Mediação Escolar",
     tags: ["Inclusão", "Autonomia", "Psicologia Escolar", "Mediação"],
