@@ -33,9 +33,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Matheus Mendonça Trindade — Psicologia & Humanização",
+  title: "Matheus Mendonça Trindade — Estudante de Psicologia | Portfólio Acadêmico",
   description:
-    "Portfólio acadêmico e profissional de Matheus Mendonça Trindade. Estudante de Psicologia (9º período - UniNassau), atuação clínica supervisionada, Acompanhamento Terapêutico (TEA) e formação técnica em Administração.",
+    "Portfólio acadêmico e curricular de Matheus Mendonça Trindade. Estudante de Psicologia (9º período - UniNassau), estágio clínico supervisionado em Fenomenologia Existencial, vivências em mediação e inclusão escolar e formação técnica em Administração.",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     apple: "/icon.svg",
   },
   openGraph: {
-    title: "Matheus Mendonça Trindade — Psicologia & Humanização",
+    title: "Matheus Mendonça Trindade — Estudante de Psicologia",
     description:
-      "Estudante de Psicologia na UniNassau, atuação clínica supervisionada e Acompanhamento Terapêutico.",
+      "Portfólio acadêmico de Matheus Mendonça Trindade: vivências em estágio clínico supervisionado na Clínica-Escola (UniNassau) e projetos em Psicologia.",
     type: "website",
     locale: "pt_BR",
   },

@@ -62,7 +62,7 @@ export default function GalleryExperience() {
             }}
           >
             <Camera size={14} />
-            Registro de Prática
+            Vivências Formativas
           </Typography>
           <Typography
             variant="h2"
@@ -85,7 +85,7 @@ export default function GalleryExperience() {
               lineHeight: 1.6,
             }}
           >
-            Registros reais do cotidiano de atendimentos, supervisão clínica, pesquisa científica e divulgação de conhecimento.
+            Vivências acadêmicas e experiências formativas que contribuíram para minha trajetória em Psicologia.
           </Typography>
         </Box>
 

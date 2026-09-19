@@ -252,7 +252,7 @@ export default function Timeline() {
 
                         {event.active && (
                           <Chip
-                            label="Atuação Ativa"
+                            label="Estágio Ativo"
                             size="small"
                             sx={{
                               height: 22,

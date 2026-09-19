@@ -63,7 +63,7 @@ export default function BentoPillars() {
               textTransform: "uppercase",
             }}
           >
-            Eixos de Atuação & Metodologia
+            Áreas de Formação & Vivências Acadêmicas
           </Typography>
           <Typography
             variant="h2"
@@ -76,7 +76,7 @@ export default function BentoPillars() {
               letterSpacing: "-0.02em",
             }}
           >
-            Prática fundamentada na escuta, na ciência e no cuidado.
+            Formação fundamentada na escuta, na ciência e no cuidado.
           </Typography>
           <Typography
             variant="body1"
@@ -86,7 +86,7 @@ export default function BentoPillars() {
               lineHeight: 1.6,
             }}
           >
-            Cada área de formação e vivência se integra para oferecer um olhar completo sobre o ser humano, suas dores, potências e contextos.
+            As experiências acadêmicas e práticas supervisionadas contribuem para minha formação e para a construção de uma compreensão ética e científica sobre diferentes contextos humanos.
           </Typography>
         </Box>
 

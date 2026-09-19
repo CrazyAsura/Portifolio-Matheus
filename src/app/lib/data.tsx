@@ -58,33 +58,33 @@ export const PERSONAL_INFO = {
   instagramUrl: "https://www.instagram.com/matheusmt_bjj?igsh=MXBoaXMyYmI1NjYxNA==",
   heroHeadline: "Compreender o ser humano com escuta atenta, ética e rigor acadêmico.",
   heroSubheadline:
-    "Graduando em Psicologia (9º período) na UniNassau com formação técnica em Administração. Atuação prática em clínica-escola sob abordagem Fenomenológico-Existencial e Acompanhamento Terapêutico (AT) escolar com foco em neurodiversidade (TEA).",
+    "Estudante de Psicologia (9º período) na UniNassau com formação técnica em Administração. Vivências acadêmicas em estágio clínico supervisionado sob abordagem Fenomenológico-Existencial e práticas de mediação e inclusão escolar.",
 };
 
 export const PILLARS: PhilosophyPillar[] = [
   {
     id: "clinica",
-    title: "Clínica & Escuta Fenomenológica",
-    subtitle: "Atendimento supervisionado focado na experiência singular",
+    title: "Estágio Clínico Supervisionado",
+    subtitle: "Prática acadêmica na clínica-escola sob abordagem fenomenológica",
     description:
-      "Prática clínica desenvolvida na clínica-escola sob rigorosa supervisão docente. A abordagem fenomenológico-existencial orienta uma postura de escuta sem julgamentos prévios, priorizando o sentido atribuído pelo próprio sujeito à sua existência.",
-    category: "Prática Clínica",
+      "Prática clínica desenvolvida no contexto da clínica-escola sob rigorosa supervisão docente. A abordagem fenomenológico-existencial orienta uma postura de escuta acolhedora, priorizando a singularidade e o sentido atribuído pela pessoa atendida à sua existência.",
+    category: "Estágio Supervisionado",
     points: [
-      "Escuta acolhedora e postura ética intransigente",
+      "Escuta acolhedora orientada pelos princípios éticos da Psicologia",
       "Supervisão clínica acadêmica contínua",
-      "Foco no sentido e na autonomia do paciente",
+      "Foco na singularidade e autonomia da pessoa atendida",
     ],
   },
   {
     id: "at-inclusao",
-    title: "Acompanhamento Terapêutico (AT)",
-    subtitle: "Inclusão escolar e desenvolvimento no TEA",
+    title: "Inclusão & Mediação Escolar",
+    subtitle: "Vivências em contexto educacional e neurodiversidade",
     description:
-      "Atuação diária no ambiente escolar junto a estudante com Transtorno do Espectro Autista. Mediação pedagógica, manejo de regulação emocional e fomento de interações sociais saudáveis entre pares.",
-    category: "Neurodiversidade",
+      "Experiência supervisionada em ambiente escolar envolvendo estratégias de acolhimento, mediação pedagógica, promoção da autonomia e fortalecimento das interações entre pares no contexto da inclusão.",
+    category: "Inclusão Escolar",
     points: [
       "Mediação ativa no contexto educacional",
-      "Estratégias individualizadas de inclusão e rotina",
+      "Estratégias de organização da rotina e promoção da autonomia",
       "Trabalho colaborativo com equipe pedagógica e família",
     ],
   },
@@ -96,21 +96,21 @@ export const PILLARS: PhilosophyPillar[] = [
       "A base em Administração confere rigor metodológico na condução de projetos, organização de rotinas e leitura aprofundada da relação entre indivíduo, produtividade e saúde mental nas organizações.",
     category: "Gestão e Processos",
     points: [
-      "Compreensão das dinâmicas de trabalho e estresse",
-      "Planejamento estratégico de intervenções",
+      "Compreensão das dinâmicas de trabalho e saúde no trabalho",
+      "Planejamento estruturado de intervenções",
       "Comunicação interpessoal assertiva e resolução de problemas",
     ],
   },
   {
     id: "mente-corpo",
     title: "Saúde Integral & Estilo de Vida",
-    subtitle: "Sinergia entre saúde mental, jiu-jitsu e disciplina física",
+    subtitle: "Sinergia entre saúde mental, prática esportiva e disciplina",
     description:
-      "A prática contínua de artes marciais (Jiu-Jitsu), corrida e musculação complementa a compreensão da saúde integral: o corpo e a mente como unidade viva indivisível no enfrentamento da ansiedade e no cultivo do bem-estar.",
+      "A prática contínua de artes marciais (Jiu-Jitsu), corrida e musculação complementa a compreensão da saúde integral: o corpo e a mente como unidade viva no enfrentamento do estresse e no cultivo do bem-estar.",
     category: "Equilíbrio e Saúde",
     points: [
-      "Psicoeducação ética nas redes sociais",
-      "Disciplina e resiliência transferidas do esporte à clínica",
+      "Psicoeducação ética e científica nas redes sociais",
+      "Disciplina e resiliência transferidas do esporte à formação",
       "Promoção de hábitos de vida sustentáveis",
     ],
   },
@@ -119,14 +119,14 @@ export const PILLARS: PhilosophyPillar[] = [
 export const TRAJECTORY_EVENTS: TrajectoryItem[] = [
   {
     id: "at-tea",
-    title: "Acompanhamento Terapêutico (AT) Escolar",
+    title: "Experiência em Inclusão Escolar",
     period: "Em andamento • 2025 - Presente",
-    subtitle: "Ambiente Escolar • Criança com TEA",
+    subtitle: "Contexto Educacional • Mediação e Autonomia",
     description:
-      "Atuação na facilitação do processo de aprendizagem e inclusão social de criança no espectro autista em ambiente escolar regular. Aplicação de técnicas de acolhimento, manejo comportamental e estímulo à autonomia.",
+      "Experiência supervisionada em contexto educacional regular, atuando na facilitação da inclusão, mediação de processos de aprendizagem e participação em estratégias de acolhimento e promoção da autonomia.",
     active: true,
-    institution: "Colégio Particular / Acompanhamento Individualizado",
-    tags: ["Inclusão", "TEA", "Psicologia Escolar", "Mediação"],
+    institution: "Contexto Educacional / Mediação Escolar",
+    tags: ["Inclusão", "Autonomia", "Psicologia Escolar", "Mediação"],
   },
   {
     id: "clinica-escola",
@@ -134,10 +134,10 @@ export const TRAJECTORY_EVENTS: TrajectoryItem[] = [
     period: "9º Período • 2025 - 2026",
     subtitle: "Clínica-Escola de Psicologia — UniNassau",
     description:
-      "Atendimento psicoterapêutico individual a adultos sob supervisão semanal rigorosa de professores mestres e doutores. Elaboração de prontuários, estudos de caso e condução de processo clínico fundamentado na fenomenologia existencial.",
+      "Experiência acadêmica em atendimentos psicoterapêuticos individuais no contexto da Clínica-Escola de Psicologia da UNINASSAU, sob supervisão semanal de professores mestres e doutores, com fundamentação na Fenomenologia Existencial.",
     active: true,
     institution: "UniNassau Aracaju",
-    tags: ["Clínica", "Fenomenologia", "Supervisão", "Ética"],
+    tags: ["Clínica-Escola", "Fenomenologia", "Supervisão", "Ética"],
   },
   {
     id: "projeto-escolar",
@@ -145,7 +145,7 @@ export const TRAJECTORY_EVENTS: TrajectoryItem[] = [
     period: "Intervenção Acadêmica • 2024",
     subtitle: "Ensino Fundamental II (9º Ano)",
     description:
-      "Elaboração, coordenação e avaliação de oficinas grupais e rodas de conversa voltadas a fortalecer os vínculos de pertencimento e reduzir conflitos de convivência entre adolescentes em transição escolar.",
+      "Elaboração, coordenação e avaliação de oficinas grupais e rodas de conversa voltadas a fortalecer os vínculos de pertencimento e convivência ética entre estudantes em transição escolar.",
     institution: "Escola Pública de Aracaju",
     tags: ["Psicologia Social", "Intervenção Grupal", "Juventude"],
   },
@@ -155,7 +155,7 @@ export const TRAJECTORY_EVENTS: TrajectoryItem[] = [
     period: "Formação Concluída • SENAC",
     subtitle: "Gestão, Finanças e Comportamento Organizacional",
     description:
-      "Capacitação sólida em gestão de projetos, processos de RH, comunicação corporativa e logística. Alicerce fundamental para compreender as dores e dinâmicas contemporâneas do trabalhador.",
+      "Capacitação sólida em gestão de projetos, processos de RH, comunicação corporativa e logística. Alicerce fundamental para compreender as dinâmicas contemporâneas das relações de trabalho.",
     institution: "SENAC Sergipe",
     tags: ["Gestão", "RH", "Processos", "Liderança"],
   },
@@ -164,41 +164,41 @@ export const TRAJECTORY_EVENTS: TrajectoryItem[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "estagio-1",
-    title: "Prática Clínica & Acolhimento",
+    title: "Estágio Clínico Supervisionado",
     subtitle: "Clínica-Escola UniNassau",
-    description: "Atendimento supervisionado focado no respeito à singularidade e na escuta sensível do paciente.",
+    description: "Atendimento supervisionado focado no respeito à singularidade e na escuta sensível da pessoa atendida.",
     img: "/estagio.jpeg",
     category: "Clínica",
   },
   {
     id: "estagio-2",
-    title: "Manejo e Discussão de Casos",
-    subtitle: "Supervisão Profissional",
-    description: "Alinhamento teórico com preceptores, aprofundando o manejo ético e os dilemas existenciais.",
+    title: "Discussão e Supervisão de Casos",
+    subtitle: "Supervisão Docente",
+    description: "Alinhamento teórico-metodológico com preceptores, aprofundando o manejo ético e os dilemas existenciais.",
     img: "/estagio2.jpeg",
     category: "Acadêmico",
   },
   {
     id: "estagio-3",
-    title: "Rotina e Vivência Prática",
-    subtitle: "Ambiente de Aprendizado",
-    description: "Estruturação de intervenções e acompanhamento sistemático de desenvolvimento socioemocional.",
+    title: "Inclusão e Mediação Escolar",
+    subtitle: "Ambiente Educacional",
+    description: "Participação em estratégias de organização da rotina e promoção da autonomia no ambiente escolar.",
     img: "/estagio3.jpeg",
     category: "Prática",
   },
   {
     id: "producao-conteudo",
-    title: "Psicoeducação Responsável",
+    title: "Psicoeducação e Divulgação Científica",
     subtitle: "Comunicação Acessível",
-    description: "Tradução de temas da psicologia para uma linguagem humana, combatendo desinformação sobre saúde mental.",
+    description: "Tradução de temas da psicologia para uma linguagem acessível e humana, orientada por referências científicas.",
     img: "/producao.jpeg",
     category: "Comunicação",
   },
   {
     id: "descoberta-academica",
-    title: "Pesquisa & Vivência Acadêmica",
+    title: "Pesquisa & Produção Acadêmica",
     subtitle: "Compromisso Científico",
-    description: "Constante atualização bibliográfica em artigos, congressos e literatura especializada.",
+    description: "Constante atualização bibliográfica em artigos, congressos e literatura especializada em Psicologia.",
     img: "/descoberta.jpeg",
     category: "Pesquisa",
   },
@@ -207,28 +207,28 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 export const COURSES_DATA: CourseItem[] = [
   {
     id: "graduacao-psicologia",
-    title: "Bacharelado em Psicologia",
+    title: "Graduação em Psicologia — em andamento",
     institution: "Centro Universitário Maurício de Nassau (UniNassau)",
     period: "2021 — 2026 (9º Período)",
     status: "Em andamento",
     completed: false,
     highlights: [
       "Ênfase em Psicologia Clínica e Escolar",
-      "Prática clínica supervisionada ativa",
-      "Bolsista e participante de projetos integradores",
+      "Prática clínica supervisionada ativa na clínica-escola",
+      "Participação em projetos de extensão e intervenção acadêmica",
     ],
   },
   {
     id: "tecnico-adm-senac",
     title: "Técnico em Administração",
     institution: "Serviço Nacional de Aprendizagem Comercial (SENAC)",
-    period: "Concluído com distinção",
+    period: "Formação Técnica Concluída",
     status: "Concluído",
     completed: true,
     highlights: [
       "Gestão de pessoas e comportamento organizacional",
       "Administração de rotinas e planejamento estratégico",
-      "Habilidades em liderança e resolução de problemas",
+      "Habilidades em liderança ética e resolução de problemas",
     ],
   },
 ];
@@ -236,5 +236,5 @@ export const COURSES_DATA: CourseItem[] = [
 export const CRP_ETHICS_STATEMENT = {
   title: "Aviso de Compromisso Ético e Acadêmico",
   text:
-    "Conforme o Código de Ética Profissional do Psicólogo e as normas do Conselho Federal de Psicologia (CFP / CRP-19), esclarece-se que Matheus Mendonça Trindade é acadêmico de graduação em Psicologia. Todas as práticas clínicas e de estágio ocorrem estritamente sob supervisão docente qualificada no âmbito da clínica-escola e termos de compromisso de estágio curricular. Não são realizados atendimentos clínicos particulares autônomos prévios à colação de grau e obtenção do registro profissional definitivo.",
+    "Conforme o Código de Ética Profissional do Psicólogo e as orientações dos Conselhos de Psicologia (CFP/CRP), esclarece-se que Matheus Mendonça Trindade é acadêmico de graduação em Psicologia (9º período). Este portfólio tem caráter estritamente acadêmico e curricular. Todas as práticas clínicas e experiências formativas descritas nesta página são realizadas exclusivamente no âmbito de estágio supervisionado com orientação docente na Clínica-Escola da UNINASSAU e convênios institucionais. Não são realizados atendimentos psicológicos particulares autônomos prévios à conclusão do curso e respectiva inscrição profissional no Conselho Regional de Psicologia.",
 };

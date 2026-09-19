@@ -26,31 +26,31 @@ import { PERSONAL_INFO } from "@/app/lib/data";
 const PREVIEW_SLIDES = [
   {
     id: "estagio-clinico",
-    title: "Clínica Fenomenológica",
+    title: "Estágio Clínico Supervisionado",
     tag: "Clínica-Escola",
     img: "/estagio.jpeg",
-    caption: "Atendimento supervisionado focado na experiência singular.",
+    caption: "Atendimento supervisionado com foco na singularidade da pessoa atendida.",
   },
   {
     id: "at-escolar",
-    title: "Acompanhamento no TEA",
-    tag: "Mediação & Inclusão",
+    title: "Inclusão & Mediação Escolar",
+    tag: "Mediação & Autonomia",
     img: "/estagio2.jpeg",
-    caption: "Manejo socioemocional e fomento à autonomia escolar.",
+    caption: "Estratégias de organização da rotina e fomento à autonomia no ambiente educacional.",
   },
   {
     id: "pesquisa-producao",
-    title: "Pesquisa & Rigor Ético",
-    tag: "Produção Contínua",
+    title: "Pesquisa & Rigor Acadêmico",
+    tag: "Produção Teórica",
     img: "/descoberta.jpeg",
     caption: "Constante atualização bibliográfica e compromisso científico.",
   },
   {
     id: "psicoeducacao",
-    title: "Comunicação Acessível",
-    tag: "Saúde Mental",
+    title: "Psicoeducação e Divulgação",
+    tag: "Comunicação Acessível",
     img: "/producao.jpeg",
-    caption: "Tradução de temas da psicologia para uma linguagem humana.",
+    caption: "Tradução de temas da psicologia para uma linguagem acessível e humana.",
   },
 ];
 
@@ -167,7 +167,7 @@ export default function Hero() {
             <Box component={motion.div} variants={fadeUpVariants}>
               <Chip
                 icon={<Sparkles size={14} color="#34d399" />}
-                label="9º Período • UniNassau Aracaju"
+                label="Estudante de Psicologia • 9º Período • UniNassau"
                 sx={{
                   bgcolor: "rgba(5, 150, 105, 0.15)",
                   color: "#a7f3d0",
@@ -191,7 +191,7 @@ export default function Hero() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                Através da escuta atenta, ética e rigor acadêmico, uno ciência psicológica e sensibilidade humana para compreender vivências e cultivar autonomia.
+                Portfólio acadêmico dedicado à apresentação de formação, experiências de estágio supervisionado e projetos em Psicologia. Atividades clínicas desenvolvidas estritamente no âmbito da clínica-escola sob supervisão docente.
               </Typography>
             </Box>
 
@@ -578,10 +578,10 @@ export default function Hero() {
               >
                 <Box>
                   <Typography variant="caption" sx={{ fontWeight: 700, color: "#f8fafc", fontSize: "0.8rem", display: "block" }}>
-                    Matheus M. Trindade
+                    Matheus Mendonça Trindade
                   </Typography>
                   <Typography variant="caption" sx={{ color: "#34d399", fontSize: "0.685rem", fontWeight: 600 }}>
-                    Clínica & Inclusão Escolar TEA
+                    Estudante de Psicologia • 9º Período
                   </Typography>
                 </Box>
                 <Chip
@@ -632,7 +632,6 @@ export default function Hero() {
                 },
                 lineHeight: { xs: 0.96, sm: 0.92, lg: 0.9 },
                 letterSpacing: "-0.035em",
-                textTransform: "uppercase",
                 color: "#ffffff",
                 m: 0,
                 textShadow: "0 4px 20px rgba(0,0,0,0.5)",
@@ -653,7 +652,7 @@ export default function Hero() {
                 HUMANIZADA
               </Box>
               <Box component="span" sx={{ display: "block" }}>
-                QUE CONECTA
+                que conecta
               </Box>
               <Box
                 component="span"
@@ -662,7 +661,7 @@ export default function Hero() {
                   color: "#34d399",
                 }}
               >
-                E TRANSFORMA
+                e transforma.
               </Box>
             </Typography>
 
@@ -686,7 +685,7 @@ export default function Hero() {
                 component="span"
                 sx={{ width: 24, height: 1.5, bgcolor: "#34d399", display: "inline-block" }}
               />
-              Abordagem Fenomenológico-Existencial & AT
+              Estágio Supervisionado • Fenomenologia & Inclusão
             </Typography>
           </Box>
         </Box>

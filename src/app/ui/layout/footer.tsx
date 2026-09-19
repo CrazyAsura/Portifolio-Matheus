@@ -174,7 +174,7 @@ export default function Footer() {
               lineHeight: 1.5,
             }}
           >
-            Portfólio de apresentação acadêmica e curricular. Práticas supervisionadas sob diretrizes do CFP / CRP-19.
+            Portfólio de apresentação acadêmica e curricular. Atividades práticas realizadas estritamente no âmbito de estágio supervisionado docente.
           </Typography>
         </Stack>
       </Container>

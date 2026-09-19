@@ -68,7 +68,7 @@ export default function Courses() {
               letterSpacing: "-0.02em",
             }}
           >
-            Formação & Credenciais
+            Formação Acadêmica
           </Typography>
           <Typography
             variant="body1"
@@ -78,7 +78,7 @@ export default function Courses() {
               lineHeight: 1.6,
             }}
           >
-            Instituições de excelência que fundamentam a prática profissional com rigor teórico e visão multidisciplinar.
+            Instituições de ensino que fundamentam a formação acadêmica com rigor teórico, científico e visão multidisciplinar.
           </Typography>
         </Box>
 

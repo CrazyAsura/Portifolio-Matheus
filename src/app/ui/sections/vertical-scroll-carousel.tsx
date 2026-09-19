@@ -48,38 +48,38 @@ const CAROUSEL_CARDS: CarouselCardData[] = [
   {
     id: "clinica-escola",
     step: "01",
-    category: "Prática Clínica",
+    category: "Estágio Supervisionado",
     icon: <HeartHandshake size={20} color="#059669" />,
-    title: "Atendimento Clínico & Escuta Fenomenológica",
+    title: "Estágio Clínico Supervisionado — Clínica-Escola",
     subtitle: "Clínica-Escola de Psicologia — UniNassau",
     description:
-      "Atendimentos psicoterapêuticos individuais supervisionados semanalmente por docentes mestres e doutores. A prática fundamenta-se na Fenomenologia Existencial, acolhendo o sofrimento sem diagnósticos redutores.",
+      "Experiência acadêmica em atendimentos psicoterapêuticos individuais realizados no contexto da Clínica-Escola de Psicologia da UNINASSAU, sob supervisão docente contínua fundamentada na Fenomenologia Existencial.",
     img: "/estagio.jpeg",
-    badge: "9º Período • Em Atividade",
+    badge: "9º Período • Estágio Ativo",
     takeaways: [
-      "Escuta acolhedora e postura ética intransigente",
-      "Supervisão docente e prontuários detalhados",
-      "Foco na singularidade e autonomia do paciente",
+      "Escuta acolhedora orientada pelos princípios éticos da Psicologia",
+      "Supervisão docente semanal e prontuários acadêmicos",
+      "Foco na singularidade e autonomia da pessoa atendida",
     ],
-    tags: ["Fenomenologia", "Supervisão", "Clínica", "Ética"],
+    tags: ["Fenomenologia", "Supervisão", "Clínica-Escola", "Ética"],
   },
   {
     id: "at-escolar-tea",
     step: "02",
-    category: "Neurodiversidade & Inclusão",
+    category: "Inclusão Escolar & Autonomia",
     icon: <Sparkles size={20} color="#059669" />,
-    title: "Acompanhamento Terapêutico (AT) Escolar",
-    subtitle: "Inclusão e Mediação com Criança no Espectro Autista",
+    title: "Experiência em Inclusão Escolar",
+    subtitle: "Mediação Pedagógica & Promoção de Autonomia no Contexto do TEA",
     description:
-      "Atuação diária na rotina escolar de estudante com TEA. Mediação pedagógica, manejo de regulação sensorial e facilitação de vínculos interpessoais saudáveis com colegas e educadores.",
+      "Experiência supervisionada em contexto educacional, envolvendo estratégias de acolhimento, mediação pedagógica, promoção da autonomia e fortalecimento das interações com a comunidade escolar.",
     img: "/estagio2.jpeg",
-    badge: "Ambiente Escolar Regular",
+    badge: "Contexto Educacional",
     takeaways: [
       "Mediação pedagógica com estímulo à autonomia",
-      "Estratégias de regulação comportamental e rotina",
-      "Comunicação integrada entre escola e família",
+      "Estratégias de organização da rotina e promoção da autonomia",
+      "Comunicação integrada com equipe pedagógica e família",
     ],
-    tags: ["TEA", "Inclusão", "Autonomia", "Mediação"],
+    tags: ["Inclusão", "Autonomia", "Mediação", "Psicologia Escolar"],
   },
   {
     id: "pesquisa-academica",
@@ -95,7 +95,7 @@ const CAROUSEL_CARDS: CarouselCardData[] = [
     takeaways: [
       "Atualização bibliográfica permanente em psicologia",
       "Apresentação de artigos em simpósios e congressos",
-      "Articulação sólida entre teoria e prática empírica",
+      "Articulação sólida entre teoria e prática acadêmica",
     ],
     tags: ["Pesquisa", "Metodologia", "Epistemologia", "Artigos"],
   },
@@ -104,16 +104,16 @@ const CAROUSEL_CARDS: CarouselCardData[] = [
     step: "04",
     category: "Divulgação & Saúde Coletiva",
     icon: <Share2 size={20} color="#059669" />,
-    title: "Psicoeducação Responsável & Saúde Mental",
-    subtitle: "Democratização do Saber Psicológico",
+    title: "Psicoeducação e Divulgação Científica",
+    subtitle: "Democratização do Conhecimento Psicológico",
     description:
-      "Compartilhamento ético de conteúdos sobre saúde emocional, disciplina e estilo de vida saudável. Tradução da linguagem técnica para um formato acessível, combatendo estigmas e promovendo prevenção.",
+      "Compartilhamento ético de conteúdos sobre saúde emocional, disciplina e estilo de vida saudável. Tradução da linguagem técnica para um formato acessível, combatendo estigmas e promovendo informação de qualidade.",
     img: "/producao.jpeg",
     badge: "Comunicação Acessível",
     takeaways: [
-      "Desmistificação de mitos sobre psicoterapia",
-      "Diálogo com estilo de vida ativo e esportivo",
-      "Rigor ético alinhado às diretrizes do CFP / CRP-19",
+      "Desmistificação de mitos sobre saúde mental",
+      "Diálogo entre saúde integral e hábitos saudáveis",
+      "Conteúdo orientado pelas referências éticas da formação em Psicologia",
     ],
     tags: ["Psicoeducação", "Comunicação", "Saúde Integral"],
   },
@@ -488,7 +488,7 @@ export default function VerticalScrollCarousel() {
               <Box>
                 <Chip
                   icon={<Camera size={14} color="#059669" />}
-                  label="Registro de Prática"
+                  label="Vivências Formativas"
                   sx={{
                     bgcolor: "#ecfdf5",
                     color: "#065f46",
@@ -524,7 +524,7 @@ export default function VerticalScrollCarousel() {
                     maxWidth: 480,
                   }}
                 >
-                  Registros reais do cotidiano de atendimentos, supervisão clínica, pesquisa científica e divulgação de conhecimento.
+                  Vivências acadêmicas e experiências formativas que contribuíram para minha trajetória em Psicologia.
                 </Typography>
               </Box>
 
